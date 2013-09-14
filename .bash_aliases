@@ -24,7 +24,13 @@ alias got='git '
 alias get='git '
 
 # Arch Env
-alias ss='systemctl'
-alias pm='pacman'
-alias ya='yaourt'
+if [ -f /etc/arch-release ]; then
+    alias ss='systemctl '
+    alias pm='sudo pacman '
+#   alias ya='yaourt'
+	alias install='yaourt '
+	alias update='yaourt -Syua'
+fi
+
+alias m='mc'
 
