@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # ls aliases
+alias ls='ls --color=auto'
+alias lh='ls -lah'
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
@@ -20,4 +22,9 @@ alias gx='gitx --all'
 
 alias got='git '
 alias get='git '
+
+# Arch Env
+alias ss='systemctl'
+alias pm='pacman'
+alias ya='yaourt'
 
