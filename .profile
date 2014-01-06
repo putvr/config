@@ -17,9 +17,9 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 # if .bash_private exists
-if [ -f "$HOME/.bash_private" ]; then
-    . "$HOME/.bash_private"
-fi
+#if [ -f "~/.bash_private" ]; then
+#    . "~/.bash_private"
+#fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.bin" ] ; then
