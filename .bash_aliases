@@ -7,9 +7,6 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 
-# Debian Dev
-alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
-
 # Git aliases
 alias gs='git status '
 alias ga='git add '
@@ -23,14 +20,9 @@ alias gx='gitx --all'
 alias got='git '
 alias get='git '
 
-# Arch Env
-if [ -f /etc/arch-release ]; then
-    alias ss='systemctl '
-    alias pm='sudo pacman '
-#   alias ya='yaourt'
-	alias install='yaourt '
-	alias update='yaourt -Syua'
-fi
-
+# other
 alias m='mc'
+alias e='emacs'
 
+# mac
+alias ff='/Applications/Firefox.app/Contents/MacOS/firefox -P -no-remote'

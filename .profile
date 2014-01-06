@@ -16,10 +16,19 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+# if .bash_private exists
+if [ -f "$HOME/.bash_private" ]; then
+    . "$HOME/.bash_private"
+fi
+
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.bin" ] ; then
     PATH="$HOME/.bin:$PATH"
 fi
 
+# locale
 export LANG="ru_RU.UTF-8"
 export LC_COLLATE="C"
+
+
+

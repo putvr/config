@@ -109,17 +109,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Debian developer env
-DEBEMAIL="PutilovRoman@gmail.com"
-DEBFULLNAME="Roman Putilov"
-export DEBEMAIL DEBFULLNAME
 
-# Arch env
-export WINEARCH=win32
-export EDITOR="nano"
-#export PATH="$PATH:~/.bin"
-
-# Connect 
-tmux attach
 
 
