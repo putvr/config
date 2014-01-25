@@ -26,3 +26,8 @@ alias e='emacs'
 
 # mac
 alias ff='/Applications/Firefox.app/Contents/MacOS/firefox -P -no-remote'
+
+# homebrew
+alias u='brew update && brew outdated && brew upgrade'
+alias uu='brew upgrade'
+alias i='brew install'

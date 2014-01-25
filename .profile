@@ -16,15 +16,13 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# if .bash_private exists
-#if [ -f "~/.bash_private" ]; then
-#    . "~/.bash_private"
-#fi
-
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.bin" ] ; then
     PATH="$HOME/.bin:$PATH"
 fi
+
+# add homebrew path 
+#PATH="/usr/local/bin/:$PATH"
 
 # locale
 export LANG="ru_RU.UTF-8"
