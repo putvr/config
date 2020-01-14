@@ -1,3 +1,20 @@
 [user]
-	name = Putilov Roman
-	email = PutilovRoman@gmail.com
+	name = Roman Putilov 
+	email = Putilov.Roman@gmail.com
+	signingkey = CA3217B3CAA542419829F4BDBEB5AB584FE07685
+
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	safecrlf = warn
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[gpg]
+	program = /usr/local/bin/gpg
+[commit]
+	gpgsign = true
