@@ -7,7 +7,7 @@
 - link:
     ~/.zshrc: .zshrc
     ~/.gitconfig: .gitconfig
-    ~/.gitigniore_global: .gitigniore_global
+    ~/.gitignore_global: .gitignore_global
 
 - shell:
-    - [git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh]
+    - if [[ ! -d ~/.oh-my-zsh ]]; then git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh; fi;
