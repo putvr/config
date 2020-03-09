@@ -92,6 +92,7 @@ fi
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
+
 # gpg
 export GPG_TTY=$(tty)
 
@@ -110,6 +111,8 @@ alias cdl="cd ~/Documents/learn/"
 alias c="code ."
 alias cn="code -n ."
 alias h="history|grep "
+alias pgp="gpg"
+alias bc="bc -l"
 
 # brew first
 export PATH=/usr/local/bin:$PATH
