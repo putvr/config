@@ -113,6 +113,7 @@ alias cn="code -n ."
 alias h="history|grep "
 alias pgp="gpg"
 alias bc="bc -l"
+alias cal="ncal -w"
 
 # brew first
 export PATH=/usr/local/bin:$PATH
