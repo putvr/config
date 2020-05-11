@@ -61,6 +61,7 @@ export UPDATE_ZSH_DAYS=13
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    common-aliases
     git
     git-flow-avh
     osx
@@ -68,7 +69,14 @@ plugins=(
     node
     ansible
     docker
+    docker-compose
     brew
+    kubectl
+    minikube
+    terraform
+    vagrant
+    vagrant-prompt
+    aws
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -117,13 +125,6 @@ alias objdump="objdump -x86-asm-syntax=intel"
 
 # brew first
 export PATH=/usr/local/bin:$PATH
-
-# Android SDK
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # hide the “user@hostname” info when you’re logged in as yourself on your local machine
 prompt_context(){}
