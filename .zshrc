@@ -81,11 +81,11 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='emacs'
-else
+#if [[ -n $SSH_CONNECTION ]]; then
+#    export EDITOR='emacs'
+#else
     export EDITOR='vim'
-fi
+#fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -102,9 +102,9 @@ export GPG_TTY=$(tty)
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="emacs ~/.zshrc"
+alias zshconfig="edit ~/.zshrc"
 #alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vi="/usr/local/bin/vim"
+#alias vi="/usr/local/bin/vim"
 alias e="emacs"
 alias cdd="cd ~/Documents/github/"
 alias cdl="cd ~/Documents/learn/"
@@ -113,6 +113,7 @@ alias cn="code -n ."
 alias h="history|grep "
 alias pgp="gpg"
 alias bc="bc -l"
+alias objdump="objdump -x86-asm-syntax=intel" 
 
 # brew first
 export PATH=/usr/local/bin:$PATH
