@@ -1,13 +1,14 @@
 - defaults:
-    link:
-      relink: true
+      link:
+          relink: true
 
 - clean: ["~"]
 
 - link:
-    ~/.zshrc: .zshrc
-    ~/.gitconfig: .gitconfig
-    ~/.gitignore_global: .gitignore_global
+      ~/.zshrc: .zshrc
+      ~/.gitconfig: .gitconfig
+      ~/.gitignore_global: .gitignore_global
+      ~/.config/joplin-desktop/userstyle.css: .config/joplin-desktop
 
 - shell:
-    - if [[ ! -d ~/.oh-my-zsh ]]; then git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh; fi;
+      - if [[ ! -d ~/.oh-my-zsh ]]; then git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh; fi;
