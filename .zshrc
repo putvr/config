@@ -117,6 +117,7 @@ alias h="history|grep "
 alias pgp="gpg"
 alias bc="bc -l"
 alias objdump="objdump -x86-asm-syntax=intel"
+alias j="python -m json.tool"
 
 # brew first
 export PATH=/usr/local/bin:$PATH
