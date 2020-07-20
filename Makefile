@@ -1,0 +1,2 @@
+conf:
+	bash ./install
