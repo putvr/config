@@ -126,4 +126,4 @@ export PATH=/usr/local/bin:$PATH
 prompt_context(){}
 
 # added by travis gem
-[ ! -s /Users/user/.travis/travis.sh ] || source /Users/user/.travis/travis.sh
+[ ! -s ~/.travis/travis.sh ] || source ~/.travis/travis.sh
