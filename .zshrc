@@ -124,3 +124,6 @@ export PATH=/usr/local/bin:$PATH
 
 # hide the “user@hostname” info when you’re logged in as yourself on your local machine
 prompt_context(){}
+
+# added by travis gem
+[ ! -s /Users/user/.travis/travis.sh ] || source /Users/user/.travis/travis.sh
