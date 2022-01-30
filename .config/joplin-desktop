@@ -1,5 +1,0 @@
-/* For styling the rendered Markdown */
-h1 { 
-	color: #CC3333;
-	text-align: center;
-} 

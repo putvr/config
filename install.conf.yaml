@@ -10,8 +10,6 @@
     ~/.gitconfig: .gitconfig
     ~/.gitignore_global: .gitignore_global
     ~/.editorconfig: .editorconfig
-    ~/.config/joplin-desktop/userstyle.css: .config/joplin-desktop
-    /Applications/Firefox.app/Contents/Resources/distribution/policies.json: policies.json
 
 - shell:
     - if [[ ! -d ~/.oh-my-zsh ]]; then git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh; fi;
