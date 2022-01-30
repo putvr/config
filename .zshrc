@@ -63,19 +63,21 @@ export UPDATE_ZSH_DAYS=13
 plugins=(
     common-aliases
     git
-    git-flow-avh
+    # git-flow-avh
     osx
     node
-    ansible
+    #    ansible
     docker
     docker-compose
     brew
-    kubectl
-    minikube
-    terraform
-    vagrant
-    vagrant-prompt
-    aws
+    #    kubectl
+    #    minikube
+    #    terraform
+    #    vagrant
+    #    vagrant-prompt
+    #    aws
+    # pyenv
+    # poetry
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -118,6 +120,7 @@ alias pgp="gpg"
 alias bc="bc -l"
 alias objdump="objdump -x86-asm-syntax=intel"
 alias j="python -m json.tool"
+alias uc="brew upgrade chromium && xattr -c /Applications/Chromium.app && open /Applications/Chromium.app"
 
 # brew first
 export PATH=/usr/local/bin:$PATH
@@ -126,4 +129,4 @@ export PATH=/usr/local/bin:$PATH
 prompt_context(){}
 
 # added by travis gem
-[ ! -s ~/.travis/travis.sh ] || source ~/.travis/travis.sh
+# [ ! -s ~/.travis/travis.sh ] || source ~/.travis/travis.sh
