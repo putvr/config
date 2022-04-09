@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # add gnutools and brew path
-export PATH="/usr/local/sbin:/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/opt/node@16/bin:/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -66,9 +66,13 @@ plugins=(
     # git-flow-avh
     osx
     node
+    yarn
+    ng
+    vscode
     #    ansible
     docker
     docker-compose
+    docker-machine
     brew
     #    kubectl
     #    minikube
@@ -113,14 +117,13 @@ alias v="vim"
 alias e="emacs"
 alias cdd="cd ~/Documents/github/"
 alias cdl="cd ~/Documents/learn/"
-alias c="code ."
-alias cn="code -n ."
 alias h="history|grep "
 alias pgp="gpg"
 alias bc="bc -l"
 alias objdump="objdump -x86-asm-syntax=intel"
 alias j="python -m json.tool"
 alias uc="brew upgrade chromium && xattr -c /Applications/Chromium.app && open /Applications/Chromium.app"
+alias hw="hledger-web"
 
 # brew first
 export PATH=/usr/local/bin:$PATH
