@@ -123,6 +123,16 @@ alias bc="bc -l"
 alias objdump="objdump -x86-asm-syntax=intel"
 alias j="python -m json.tool"
 alias uc="brew upgrade chromium && xattr -c /Applications/Chromium.app && open /Applications/Chromium.app"
+
+if [[ $(hostname) == "users-MacBook-Pro.local" ]]; then 
+    PREFIX=~/Documents/;
+else
+    PREFIX=~/Documents/github/;
+fi;
+export LEDGER_FILE=wallet/2022/main.journal;
+
+# hledger
+export LEDGER_FILE=$PREFIX$LEDGER_FILE;
 alias hw="hledger-web"
 
 # brew first
