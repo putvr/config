@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # add gnutools and brew path
-export PATH="/usr/local/sbin:/usr/local/opt/node@16/bin:/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="~/.bin:/usr/local/sbin:/usr/local/opt/node@16/bin:/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -65,6 +65,7 @@ plugins=(
     git
     # git-flow-avh
     osx
+    nvm
     node
     yarn
     ng
@@ -129,11 +130,12 @@ if [[ $(hostname) == "users-MacBook-Pro.local" ]]; then
 else
     PREFIX=~/Documents/github/;
 fi;
-export LEDGER_FILE=wallet/2022/main.journal;
 
 # hledger
+export LEDGER_FILE=wallet/2022/main.journal;
 export LEDGER_FILE=$PREFIX$LEDGER_FILE;
 alias hw="hledger-web"
+alias hlb="hledger bal -M --depth=1 -V"
 
 # brew first
 export PATH=/usr/local/bin:$PATH
@@ -141,5 +143,6 @@ export PATH=/usr/local/bin:$PATH
 # hide the “user@hostname” info when you’re logged in as yourself on your local machine
 prompt_context(){}
 
-# added by travis gem
-# [ ! -s ~/.travis/travis.sh ] || source ~/.travis/travis.sh
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
