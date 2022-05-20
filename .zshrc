@@ -126,14 +126,14 @@ alias j="python -m json.tool"
 alias uc="brew upgrade chromium && xattr -c /Applications/Chromium.app && open /Applications/Chromium.app"
 
 if [[ $(hostname) == "users-MacBook-Pro.local" ]]; then 
-    PREFIX=~/Documents/;
+    DEV_PREFIX=~/Documents/;
 else
-    PREFIX=~/Documents/github/;
+    DEV_PREFIX=~/Documents/github/;
 fi;
 
 # hledger
 export LEDGER_FILE=wallet/2022/main.journal;
-export LEDGER_FILE=$PREFIX$LEDGER_FILE;
+export LEDGER_FILE=$DEV_PREFIX$LEDGER_FILE;
 alias hw="hledger-web"
 alias hlb="hledger bal -M --depth=1 -V"
 
